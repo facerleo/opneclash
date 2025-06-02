@@ -16,85 +16,6 @@ proxy-providers:
       interval: 300
     proxy: 直连 
     
-  冰云:
-    url: "机场订阅地址"
-    type: http
-    interval: 86400
-    health-check:
-      enable: true
-      url: https://www.gstatic.com/generate_204
-      interval: 300
-    proxy: 直连    
-
-  小牛:
-    url: "机场订阅地址"
-    type: http
-    interval: 86400
-    health-check:
-      enable: true
-      url: https://www.gstatic.com/generate_204
-      interval: 300
-    proxy: 直连    
-
-  硅谷:
-    url: "机场订阅地址"
-    type: http
-    interval: 86400
-    health-check:
-      enable: true
-      url: https://www.gstatic.com/generate_204
-      interval: 300
-    proxy: 直连      
-  
-  无界:
-    url: "机场订阅地址"
-    type: http
-    interval: 86400
-    health-check:
-      enable: true
-      url: https://www.gstatic.com/generate_204
-      interval: 300
-    proxy: 直连   
-   
-  猫耳:
-    url: "机场订阅地址"
-    type: http
-    interval: 86400
-    health-check:
-      enable: true
-      url: https://www.gstatic.com/generate_204
-      interval: 300
-    proxy: 直连   
-
-  快猫:
-    url: "机场订阅地址"
-    type: http
-    interval: 86400
-    health-check:
-      enable: true
-      url: https://www.gstatic.com/generate_204
-      interval: 300
-    proxy: 直连 
-    
-  BestVPN:
-    url: "机场订阅地址"
-    type: http
-    interval: 86400
-    health-check:
-      enable: true
-      url: https://www.gstatic.com/generate_204
-      interval: 300
-    proxy: 直连     
-
-  牛逼:
-    url: "机场订阅地址"
-    type: http
-    interval: 86400
-    health-check:
-      enable: true
-      url: https://www.gstatic.com/generate_204
-      interval: 300
-    proxy: 直连      
 
 proxies:
   - {name: 直连, type: direct}
@@ -134,43 +55,7 @@ dns:
     - +.lan
     - +.local
     - geosite:cn
-# 快猫    
-    - +.quickcht3.club
-    - +.kuaimao2.club
-# 火烧 
-    - +.onesubv.site
-    - +.oneyyds.online
-    - +.fengyyds.site
-    - +.onemg.top
-# 猫耳 
-    - +.zhunchuanpb.com
-    - +.sevenka.top
-# BestVPN 
-    - +.networklinkpro.net
-    - +.prosubnet02.eu
-# 小牛
-    - +.4yfu73r3a4kl.com
-    - +.xiaoniuyun.cc  
-# 硅谷
-    - +.huawei-cloud.shop
-    - +.huawei-cloud.vip
-    - +.gpt-agent.cc      
-# 无界
-    - +.acwct.cn
-    - +.472361.xyz
-# 冰云
-    - +.bingyun.ink   
-    - +.fafhjkah.xyz
-# 牛逼   
-    - +.66jc.top  
-    - +.jueduibupao.top  
-    
-    - +.qeayr.cn
-    - +.saojc.xyz   
-    - +.sssyun.xyz
-    - +.dler.cloud
-    - +.0tk8a3a1q4t94dler.com    
-    - +.aerianas.top
+
 
 ipv6: true
 
@@ -196,7 +81,7 @@ profile:
 # ========================
 default: &default
   type: select
-  proxies: [直连,所有-手动,所有-自动,香港-自动,台湾-自动,日本-自动,新加坡-自动,韩国-自动,美国-自动,其他-自动,拒绝]
+  proxies: [直连,所有-手动,所有-自动,日本-自动,英国-自动,德国-自动,美国-自动,其他-自动,拒绝]
 
 proxy-groups:
   - {name: ChatGPT, <<: *default}

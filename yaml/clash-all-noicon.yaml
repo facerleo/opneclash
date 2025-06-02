@@ -112,13 +112,11 @@ proxy-groups:
   - {name: 其他, <<: *default}
   - {name: 所有-手动, type: select, include-all: true, filter: "^((?!(直连|拒绝)).)*$"}
   - {name: 所有-自动, type: url-test, include-all: true, tolerance: 50, interval: 300, filter: "^((?!(直连|拒绝)).)*$"}
-  - {name: 香港-自动, type: url-test, include-all: true, tolerance: 50, interval: 300, filter: "(?=.*(广港|香港|HK|Hong Kong|🇭🇰|HongKong)).*$"}
-  - {name: 台湾-自动, type: url-test, include-all: true, tolerance: 50, interval: 300, filter: "(?=.*(广台|台湾|台灣|TW|Tai Wan|🇹🇼|🇨🇳|TaiWan|Taiwan)).*$"}
-  - {name: 日本-自动, type: url-test, include-all: true, tolerance: 50, interval: 300, filter: "(?=.*(广日|日本|JP|川日|东京|大阪|泉日|埼玉|沪日|深日|🇯🇵|Japan)).*$"}
-  - {name: 新加坡-自动, type: url-test, include-all: true, tolerance: 50, interval: 300, filter: "(?=.*(广新|新加坡|SG|坡|狮城|🇸🇬|Singapore)).*$"}
-  - {name: 韩国-自动, type: url-test, include-all: true, tolerance: 50, interval: 300, filter: "(?=.*(广韩|韩国|韓國|KR|首尔|春川|🇰🇷|Korea)).*$"}
-  - {name: 美国-自动, type: url-test, include-all: true, tolerance: 50, interval: 300, filter: "(?=.*(广美|美|US|纽约|波特兰|达拉斯|俄勒|凤凰城|费利蒙|硅谷|拉斯|洛杉|圣何塞|圣克拉|西雅|芝加|🇺🇸|United States)).*$"}
-  - {name: 其他-自动, type: url-test, include-all: true, tolerance: 50, interval: 300, filter: "^((?!(直连|拒绝|广港|香港|HK|Hong Kong|🇭🇰|HongKong|广台|台湾|台灣|TW|Tai Wan|🇹🇼|🇨🇳|TaiWan|Taiwan|广日|日本|JP|川日|东京|大阪|泉日|埼玉|沪日|深日|🇯🇵|Japan|广新|新加坡|SG|坡|狮城|🇸🇬|Singapore|广韩|韩国|韓國|KR|首尔|春川|🇰🇷|Korea|广美|美|US|纽约|波特兰|达拉斯|俄勒|凤凰城|费利蒙|硅谷|拉斯|洛杉|圣何塞|圣克拉|西雅|芝加|🇺🇸|United States|英国|UK)).)*$"}
+  - {name: 日本-自动, type: url-test, include-all: true, tolerance: 50, interval: 300, filter: "(?=.*(日本)).*$"}
+  - {name: 英国-自动, type: url-test, include-all: true, tolerance: 50, interval: 300, filter: "(?=.*(英国)).*$"}
+  - {name: 德国-自动, type: url-test, include-all: true, tolerance: 50, interval: 300, filter: "(?=.*(德国)).*$"}
+  - {name: 美国-自动, type: url-test, include-all: true, tolerance: 50, interval: 300, filter: "(?=.*(美国)).*$"}
+  - {name: 其他-自动, type: url-test, include-all: true, tolerance: 50, interval: 300, filter: "^((?!(直连|拒绝|日本|美国|德国|英国)).)*$"}
 
 # ========================
 # 规则引擎（rules）
